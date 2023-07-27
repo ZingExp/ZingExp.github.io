@@ -12,7 +12,7 @@ model-viewer {
 .demo {
     position: absolute;
     top: 4%;
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     flex: 1;
     display: flex;
