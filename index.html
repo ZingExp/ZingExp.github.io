@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="demo">
-        <model-viewer id="modelViewer" alt="not-too-modern_fridge" src="not-too-modern_fridge.glb" poster="not-too-modern_fridge.webp" environment-image="legacy" exposure="0.5" shadow-intensity="1" camera-controls touch-action="pan-y" orientation="0 0 180deg" ar>
+        <model-viewer id="modelViewer" alt="not-too-modern_fridge" src="not-too-modern_fridge.glb" poster="not-too-modern_fridge.webp" environment-image="legacy" exposure="0.5" shadow-intensity="1" camera-controls touch-action="pan-y" orientation="0 0 180deg" ar ar-modes="webxr" ar-scale="fixed">
             <button slot="hotspot-dot+X-Y+Z" class="dot" data-position="1 -1 1" data-normal="1 0 0"></button>
             <button slot="hotspot-dim+X-Y" class="dim" data-position="1 -1 0" data-normal="1 0 0"></button>
             <button slot="hotspot-dot+X-Y-Z" class="dot" data-position="1 -1 -1" data-normal="1 0 0"></button>
@@ -151,7 +151,7 @@
             position: `${center.x + x2 * 1.2} ${center.y - y2 * 1.1} ${center.z}`
           });
           modelViewer.querySelector('button[slot="hotspot-dim+X-Y"]').textContent =
-              `${(size.z * 100).toFixed(0)} cm`;
+              `${(size.z * 1).toFixed(2)} cm`;
       
           modelViewer.updateHotspot({
             name: 'hotspot-dot+X-Y-Z',
@@ -163,7 +163,7 @@
             position: `${center.x + x2 * 1.2} ${center.y} ${center.z - z2 * 1.2}`
           });
           modelViewer.querySelector('button[slot="hotspot-dim+X-Z"]').textContent =
-              `${(size.y * 100).toFixed(0)} cm`;
+              `${(size.y * 1).toFixed(2)} cm`;
       
           modelViewer.updateHotspot({
             name: 'hotspot-dot+X+Y-Z',
@@ -175,7 +175,7 @@
             position: `${center.x} ${center.y + y2 * 1.1} ${center.z - z2 * 1.1}`
           });
           modelViewer.querySelector('button[slot="hotspot-dim+Y-Z"]').textContent =
-              `${(size.x * 100).toFixed(0)} cm`;
+              `${(size.x * 1).toFixed(2)} cm`;
       
           modelViewer.updateHotspot({
             name: 'hotspot-dot-X+Y-Z',
@@ -187,7 +187,7 @@
             position: `${center.x - x2 * 1.2} ${center.y} ${center.z - z2 * 1.2}`
           });
           modelViewer.querySelector('button[slot="hotspot-dim-X-Z"]').textContent =
-              `${(size.y * 100).toFixed(0)} cm`;
+              `${(size.y * 1).toFixed(2)} cm`;
       
           modelViewer.updateHotspot({
             name: 'hotspot-dot-X-Y-Z',
@@ -199,7 +199,7 @@
             position: `${center.x - x2 * 1.2} ${center.y - y2 * 1.1} ${center.z}`
           });
           modelViewer.querySelector('button[slot="hotspot-dim-X-Y"]').textContent =
-              `${(size.z * 100).toFixed(0)} cm`;
+              `${(size.z * 1).toFixed(2)} cm`;
       
           modelViewer.updateHotspot({
             name: 'hotspot-dot-X-Y+Z',

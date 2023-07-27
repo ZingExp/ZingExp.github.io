@@ -12,7 +12,7 @@ model-viewer {
 .demo {
     position: absolute;
     top: 4%;
-    height: 75vh;
+    height: 80vh;
     width: 100vw;
     flex: 1;
     display: flex;
@@ -239,7 +239,7 @@ a.buy-btn-ui, a.buy-btn-ui:link, a.buy-btn-ui:hover, a.buy-btn-ui:active, a.buy-
     left: calc(50% - 60px);
 }
 
-/*  */
+/* Dimensions */
 #controls {
     position: absolute;
     bottom: 16px;
