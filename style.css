@@ -57,7 +57,7 @@ model-viewer {
     padding: 20px;
     border-radius: 20px;
     border: none;
-    background-image: url("assets/camera.png");
+    background-image: url("camera.png");
     background-position: center;
 }
 
@@ -67,7 +67,7 @@ model-viewer {
     padding: 20px;
     border-radius: 20px;
     border: none;
-    background-image: url("assets/share.png");
+    background-image: url("share.png");
     background-position: center;
 }
 
