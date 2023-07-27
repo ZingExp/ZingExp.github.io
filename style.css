@@ -12,7 +12,7 @@ model-viewer {
 .demo {
     position: absolute;
     top: 4%;
-    height: 75vh;
+    height: 90vh;
     width: 100vw;
     flex: 1;
     display: flex;
@@ -69,6 +69,7 @@ model-viewer {
     border: none;
     background-image: url("share.png");
     background-position: center;
+    visibility: hidden;
 }
 
 #show-btn-ui{
@@ -84,7 +85,7 @@ model-viewer {
 }
 
 .shopping-card{
-    bottom: -500px;
+    bottom: -1000px;
     position: absolute;
     padding: 0px;
     background-color: #d6d6d6;
